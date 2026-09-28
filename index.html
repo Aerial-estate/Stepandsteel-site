@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Step &amp; Steel — Coming Soon</title>
+  <meta name="description" content="Step & Steel — running and dumbbell training in one plan. Action. Discipline. Results. Coming soon to iPhone and Android.">
+  <meta name="theme-color" content="#0A0A0A">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://stepandsteel.com/">
+  <meta property="og:title" content="Step & Steel — Coming Soon">
+  <meta property="og:description" content="Running and dumbbell training in one plan. Action. Discipline. Results.">
+  <meta property="og:image" content="https://stepandsteel.com/poster.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0A0A0A;
+      --text: #FFFFFF;
+      --steel: #9CA3AF;
+      --steel-dark: #6B7280;
+      --accent: #E8622C;
+      --header: 'Oswald', 'Arial Narrow', Impact, system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: max(24px, env(safe-area-inset-top)) 20px max(24px, env(safe-area-inset-bottom));
+      text-align: center;
+    }
+
+    .poster {
+      display: block;
+      width: auto;
+      max-width: min(100%, 620px);
+      max-height: 72vh;
+      /* fade the photo's edges into the page so it doesn't sit in a hard box */
+      -webkit-mask-image: radial-gradient(ellipse 72% 75% at 50% 45%, #000 62%, transparent 100%);
+              mask-image: radial-gradient(ellipse 72% 75% at 50% 45%, #000 62%, transparent 100%);
+      opacity: 0;
+      animation: rise 900ms ease-out 100ms forwards;
+    }
+
+    .soon {
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font-family: var(--header);
+      font-weight: 700;
+      font-size: clamp(28px, 6vw, 48px);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      opacity: 0;
+      animation: rise 800ms ease-out 450ms forwards;
+    }
+    .soon::before, .soon::after {
+      content: '';
+      width: clamp(28px, 8vw, 72px);
+      height: 2px;
+      background: var(--accent);
+    }
+    .soon span { color: var(--accent); }
+
+    .sub {
+      margin: 14px 0 0;
+      max-width: 34em;
+      color: var(--steel);
+      font-size: clamp(15px, 2.2vw, 17px);
+      line-height: 1.55;
+      opacity: 0;
+      animation: rise 800ms ease-out 700ms forwards;
+    }
+    .platforms {
+      margin-top: 18px;
+      font-family: var(--header);
+      font-weight: 500;
+      font-size: 13px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--steel-dark);
+      opacity: 0;
+      animation: rise 800ms ease-out 900ms forwards;
+    }
+    .platforms b { color: var(--accent); font-weight: 500; }
+
+    footer {
+      margin-top: 36px;
+      font-size: 12px;
+      color: var(--steel-dark);
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: none; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .poster, .soon, .sub, .platforms { animation: none; opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="poster" src="poster.jpg" width="1172" height="1342"
+         alt="Step &amp; Steel logo above a sculpted athlete holding dumbbells in a dark gym — Action, Discipline, Results">
+
+    <h1 class="soon">Coming <span>Soon</span></h1>
+
+    <p class="sub">Running and dumbbell training, built into one weekly plan — with follow-along videos for every rep.</p>
+
+    <div class="platforms">iPhone <b>•</b> Android</div>
+
+    <footer>© 2026 Step &amp; Steel</footer>
+  </main>
+</body>
+</html>
