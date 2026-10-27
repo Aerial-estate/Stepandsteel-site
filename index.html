@@ -104,8 +104,18 @@
     }
     .platforms b { color: var(--accent); font-weight: 500; }
 
+    .contact {
+      margin: 28px 0 0;
+      font-size: 14px;
+      color: var(--steel);
+      opacity: 0;
+      animation: rise 800ms ease-out 1050ms forwards;
+    }
+    .contact a { color: var(--text); text-decoration: none; border-bottom: 1px solid var(--accent); }
+    .contact a:hover { color: var(--accent); }
+
     footer {
-      margin-top: 36px;
+      margin-top: 20px;
       font-size: 12px;
       color: var(--steel-dark);
     }
@@ -115,7 +125,7 @@
       to   { opacity: 1; transform: none; }
     }
     @media (prefers-reduced-motion: reduce) {
-      .poster, .soon, .sub, .platforms { animation: none; opacity: 1; }
+      .poster, .soon, .sub, .platforms, .contact { animation: none; opacity: 1; }
     }
   </style>
 </head>
@@ -129,6 +139,8 @@
     <p class="sub">Running and dumbbell training, built into one weekly plan — with follow-along videos for every rep.</p>
 
     <div class="platforms">iPhone <b>•</b> Android</div>
+
+    <p class="contact">Questions or support: <a href="mailto:hello@stepandsteel.com">hello@stepandsteel.com</a></p>
 
     <footer>© 2026 Step &amp; Steel</footer>
   </main>
