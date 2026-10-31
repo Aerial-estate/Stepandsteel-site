@@ -8,10 +8,25 @@
   <meta name="theme-color" content="#0A0A0A">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
   <style>
+    /* Oswald (SIL Open Font License, see fonts/OFL.txt), hosted here rather than on Google Fonts */
+    @font-face {
+      font-family: 'Oswald';
+      font-style: normal;
+      font-weight: 200 700;
+      font-display: swap;
+      src: url(fonts/oswald-latin-ext.woff2) format('woff2');
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+    @font-face {
+      font-family: 'Oswald';
+      font-style: normal;
+      font-weight: 200 700;
+      font-display: swap;
+      src: url(fonts/oswald-latin.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
     :root {
       --bg: #0A0A0A;
       --surface: #161616;
@@ -86,7 +101,7 @@
     <a class="home" href="/">Step <span>&amp;</span> Steel</a>
 
     <h1>Terms of Use</h1>
-    <p class="updated">Effective October 30, 2026</p>
+    <p class="updated">Effective November 1, 2026</p>
 
     <p>These terms apply to the Step &amp; Steel app and this website ("Step &amp; Steel", "we", "us"). Step &amp; Steel is operated by Bradley Gibbons in Alberta, Canada. By using the app you agree to these terms. If you don't agree, please don't use the app.</p>
 
@@ -102,8 +117,9 @@
     </ul>
     <p><strong>You exercise at your own risk.</strong> You are responsible for deciding whether an exercise, weight, distance or intensity is right for you, and for your own safety while training.</p>
 
-    <h2>Subscriptions</h2>
-    <p>Some features need a paid subscription. Subscriptions are bought and managed through the Apple App Store or Google Play, and their terms apply to the purchase. Unless you cancel at least 24 hours before the end of the current period, your subscription renews automatically and your account is charged for the next period. You can manage or cancel it at any time in your App Store or Google Play account settings. Refunds are handled by Apple or Google under their policies.</p>
+    <h2>Free trial and payments</h2>
+    <p>Step &amp; Steel does not currently charge for anything, and paid subscriptions are not yet available. The app includes a free 7-day trial, which is tracked on your phone. No payment details are requested or taken, and no charges are made when the trial ends.</p>
+    <p>We plan to offer paid subscriptions in the future. Before they become available, we will update these terms with the subscription details, including pricing, billing, renewal, cancellation and refunds, and you will be able to review them before choosing to subscribe.</p>
 
     <h2>Using the app</h2>
     <p>We give you a personal, non-transferable right to use the app for your own training. Please don't copy, resell, redistribute or reverse-engineer the app or its content, including its videos, workouts and artwork, which belong to Step &amp; Steel. If you downloaded the app from the Apple App Store, Apple's standard <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Licensed Application End User License Agreement</a> also applies.</p>

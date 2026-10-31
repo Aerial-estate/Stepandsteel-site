@@ -8,10 +8,25 @@
   <meta name="theme-color" content="#0A0A0A">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
   <style>
+    /* Oswald (SIL Open Font License, see fonts/OFL.txt), hosted here rather than on Google Fonts */
+    @font-face {
+      font-family: 'Oswald';
+      font-style: normal;
+      font-weight: 200 700;
+      font-display: swap;
+      src: url(fonts/oswald-latin-ext.woff2) format('woff2');
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+    @font-face {
+      font-family: 'Oswald';
+      font-style: normal;
+      font-weight: 200 700;
+      font-display: swap;
+      src: url(fonts/oswald-latin.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
     :root {
       --bg: #0A0A0A;
       --surface: #161616;
@@ -86,7 +101,7 @@
     <a class="home" href="/">Step <span>&amp;</span> Steel</a>
 
     <h1>Privacy Policy</h1>
-    <p class="updated">Effective October 31, 2026</p>
+    <p class="updated">Effective November 1, 2026</p>
 
     <div class="summary">
       <p><strong>The short version:</strong> your workouts, runs and body details stay on your phone. Step &amp; Steel has no user accounts and no servers that store your training information, and we don't use advertising, analytics or cross-app tracking. A few service providers handle routine technical information, such as your IP address, so we can deliver videos and this website. This policy explains exactly what, why and for how long.</p>
@@ -103,18 +118,19 @@
       <li>Sessions you mark as done, and the runs, walks and rest days you log, with distance and time</li>
       <li>Nutrition details: bodyweight, activity level and dietary goal</li>
       <li>App settings, such as reminder time, video volume, your chosen coach and your acceptance of our safety notice</li>
-      <li>Your free trial start date and subscription status</li>
+      <li>Your free trial start date and trial status</li>
     </ul>
-    <p><strong>This information is stored only on your device. The app does not send it to us or to anyone else.</strong> On iPhone, the app's saved information is excluded from iCloud and computer backups.</p>
+    <p><strong>This information is stored only on your device. The app does not send it to us or to anyone else.</strong> The app is set up so this information is not included in iCloud, computer or Google cloud backups.</p>
+    <p><strong>Because it is only on your device, we can't recover it.</strong> Your workout history and settings may be lost if you delete the app, reset your phone or move to a new phone.</p>
 
     <h2>Information handled by service providers</h2>
     <p>Some features need to connect to the internet. When they do, a service provider receives the technical information that any internet connection involves. This is ordinary server activity, not advertising tracking, and none of it includes your workouts or body details.</p>
 
     <h3>Workout videos (bunny.net)</h3>
-    <p>The full-length follow-along videos are streamed from our video delivery provider, <a href="https://bunny.net/privacy" rel="noopener">BunnyWay d.o.o. (bunny.net)</a>. To send you a video, bunny.net's servers receive your device's IP address, the name of the video file requested, and standard request details such as your device's software version (its "user agent") and the time. bunny.net uses this only to deliver the video and protect its network. Its request logs are kept for 3 days, and by default it records IP addresses in anonymized form. Videos you have watched are saved in your phone's temporary storage so they play faster next time; your phone can clear this storage when it needs space. The short demo clips in the exercise library are built into the app and don't use the internet.</p>
+    <p>The full-length follow-along videos are streamed from our video delivery provider, <a href="https://bunny.net/privacy" rel="noopener">BunnyWay d.o.o. (bunny.net)</a>. To send you a video, bunny.net's servers receive your device's IP address, the name of the video file requested, and standard request details such as your device's software version (its "user agent") and the time. bunny.net uses this to deliver the video and to operate and protect its network. According to bunny.net, its standard request logs are kept for 3 days. Videos you have watched are saved in your phone's temporary storage so they play faster next time; your phone can clear this storage when it needs space. The short demo clips in the exercise library are built into the app and don't use the internet.</p>
 
-    <h3>This website (GitHub Pages and Google Fonts)</h3>
-    <p>stepandsteel.com has no forms, sign-ups, cookies, analytics or tracking scripts. It is hosted by <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub</a>, which logs the IP address of website visitors for security purposes. Our pages also load a typeface from <a href="https://policies.google.com/privacy" rel="noopener">Google Fonts</a>, so Google receives your IP address and browser information when it delivers the font. Links in the app to our Terms of Use and this policy open this website.</p>
+    <h3>This website (GitHub Pages)</h3>
+    <p>stepandsteel.com has no forms, sign-ups, cookies, analytics or tracking scripts, and its fonts and images are hosted on the site itself. It is hosted by <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub Pages</a>, which logs the IP address of website visitors for security purposes. Links in the app to our Terms of Use and this policy open this website.</p>
 
     <h3>Emails to support</h3>
     <p>If you email us, we receive your email address, name (if included) and whatever you choose to write. Our email is provided by Zoho and stored in its Canadian data centre. We use it only to reply to you and keep a record of the conversation.</p>
@@ -123,10 +139,12 @@
     <p>Daily workout reminders are scheduled on your phone by your phone's operating system. We don't use push notification servers, and reminder details are not sent to us.</p>
 
     <h3>Apple and Google</h3>
-    <p>You download Step &amp; Steel from the Apple App Store or Google Play, and they handle your account with them under their own privacy policies. If you have chosen to share diagnostics with app developers in your phone's settings, Apple or Google may send us crash reports and summary usage statistics that do not identify you. If you join our beta test through Apple's TestFlight, Apple shares your name, email address, device details, crash reports and any feedback you send with us so we can run the test.</p>
+    <p>You download Step &amp; Steel from the Apple App Store or Google Play. Apple and Google handle your account, downloads and device diagnostics under their own privacy policies; Step &amp; Steel doesn't control what they collect.</p>
+    <p>The app itself does not include crash reporting or analytics. Separately, if you have turned on the option in your phone's settings to share diagnostics with app developers, Apple or Google may pass some of that information on to us: typically crash reports and summary usage statistics that don't identify you by name. We use these only to find and fix problems.</p>
+    <p>If you join our beta test through Apple's TestFlight, Apple shares your name, email address, device details, crash reports and any feedback you send with us so we can run the test.</p>
 
-    <h2>Subscriptions</h2>
-    <p>Your free trial and subscription status are currently tracked on your phone, and the app does not yet take payments. When paid subscriptions launch, you will buy and manage them through the Apple App Store or Google Play. They process the payment, and we never receive your card or banking details. Before that happens, we will update this policy to describe exactly what subscription information we receive.</p>
+    <h2>Free trial and payments</h2>
+    <p>Step &amp; Steel does not currently take payments, and paid subscriptions are not yet available. The app includes a free trial, and your trial start date and status are stored only on your phone. Apple and Google are not currently processing any payments for Step &amp; Steel, and we receive no payment information. Before paid subscriptions become available, we will update this policy to explain how they work and what information is involved.</p>
 
     <h2>What we don't do</h2>
     <ul>
@@ -136,18 +154,18 @@
     </ul>
 
     <h2>Information outside Canada</h2>
-    <p>Some of our service providers handle information outside Canada. bunny.net is based in the European Union and delivers videos from servers around the world, including the United States. GitHub and Google are based in the United States. Information they handle is subject to the laws of those countries, and may be accessed by courts or authorities there. If you have questions about how these providers handle information, contact our Privacy Officer below.</p>
+    <p>Some of our service providers handle information outside Canada. bunny.net is based in the European Union and delivers videos from servers around the world, including the United States. GitHub, Apple and Google are based in the United States. Our support email is stored by Zoho in Canada. Information they handle is subject to the laws of those countries, and may be accessed by courts or authorities there. If you have questions about how these providers handle information, contact our Privacy Officer below.</p>
 
     <h2>How long information is kept</h2>
     <ul>
-      <li><strong>On your phone:</strong> until you delete it in the app or delete the app.</li>
-      <li><strong>bunny.net video logs:</strong> 3 days.</li>
-      <li><strong>GitHub and Google:</strong> according to their own policies, linked above.</li>
-      <li><strong>Support emails:</strong> only as long as we need them to help you and keep reasonable business records, after which we delete them.</li>
+      <li><strong>On your phone:</strong> until you delete it in the app, delete the app or reset your phone.</li>
+      <li><strong>bunny.net video logs:</strong> 3 days, according to bunny.net.</li>
+      <li><strong>GitHub Pages logs:</strong> according to GitHub's own policy, linked above.</li>
+      <li><strong>Support emails:</strong> generally kept for up to two years after your question or request is resolved, unless we need to keep them longer for legal, security or legitimate business reasons. When we no longer need them, we delete them securely.</li>
     </ul>
 
     <h2>Deleting your information</h2>
-    <p>You can edit or delete logged activity in the app at any time. Deleting the app deletes the information it stored on your phone. A few copies may remain elsewhere for a time: on Android, Google may have included the app's information in your device backup, which you can manage in your Google account; service provider logs expire as described above; and your past emails with us stay in our mailbox until we delete them. Apple and Google also keep their own records of your downloads and any purchases.</p>
+    <p>You can edit or delete logged activity in the app at any time. Deleting the app deletes the information it stored on your phone, and it can't be recovered. Some records held elsewhere are not affected: service provider logs expire as described above, emails you have sent us are kept as described above, and Apple and Google keep their own records of your downloads.</p>
 
     <h2>Your rights: access, correction and complaints</h2>
     <p>You can ask us what personal information we have about you, how it has been used and who it has been shared with, and ask us to correct anything that is wrong. Because your training information stays on your phone, we usually hold very little: typically only emails you have sent us. Contact our Privacy Officer below. We will respond within 45 days, as Alberta's PIPA requires, and may ask you to confirm your identity first.</p>
@@ -157,7 +175,7 @@
     <p>Step &amp; Steel is not directed at children under 13, and we do not knowingly collect personal information from them.</p>
 
     <h2>Changes to this policy</h2>
-    <p>If we change how the app or website handles information, for example when paid subscriptions launch, we'll update this page and the date at the top before the change takes effect.</p>
+    <p>If we change how the app or website handles information, for example before paid subscriptions become available, we'll update this page and the date at the top before the change takes effect.</p>
 
     <h2>Privacy Officer</h2>
     <p>Bradley Gibbons is responsible for Step &amp; Steel's privacy practices. For privacy questions, requests or complaints, email our Privacy Officer at <a href="mailto:support@stepandsteel.com">support@stepandsteel.com</a>.</p>
